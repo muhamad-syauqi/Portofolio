@@ -135,7 +135,20 @@ h2 {
 .projects, .certificates {
     background: white;
 }
+.project-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
 
+.project-btn:hover {
+  background: #0056b3;
+}
 .projects-grid, .certs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
