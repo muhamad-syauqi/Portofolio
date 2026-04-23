@@ -147,7 +147,7 @@ h2 {
 }
 
 .about p {
-    text-align: center;
+    text-align: justify;
     font-size: 1.2rem;
     flex: 1;
     opacity: 0.9;
