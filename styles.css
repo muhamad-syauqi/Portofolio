@@ -36,6 +36,33 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -5px);
 }
 
 .nav-logo {
@@ -48,6 +75,10 @@ body {
     display: flex;
     list-style: none;
     gap: 2rem;
+}
+
+.nav-menu.active {
+    transform: translateX(0);
 }
 
 .nav-menu a {
@@ -327,10 +358,24 @@ footer {
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .nav-menu {
-        gap: 1.5rem;
+    .hamburger {
+        display: flex;
     }
     
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: rgba(9, 198, 231, 0.98);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem 0;
+        gap: 1rem;
+        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+    }
+
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
