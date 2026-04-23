@@ -15,6 +15,7 @@
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Proyek</a></li>
                 <li><a href="#certificates">Sertifikat</a></li>
                 <li><a href="#contact">Kontak</a></li>
@@ -33,7 +34,68 @@
     <section id="about" class="about">
         <div class="container">
             <h2>Tentang Saya</h2>
-            <p>Saya adalah seorang web developer dengan passion di bidang front-end dan back-end. Suka membuat website yang responsive dan user-friendly. Pengalaman dengan HTML, CSS, JavaScript, dan berbagai framework.</p>
+            <div class="about-content">
+                <div class="profile-img">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Muhamad Syauqi">
+                </div>
+                <p>Saya adalah seorang web developer dengan passion di bidang front-end dan back-end. Suka membuat website yang responsive dan user-friendly. Pengalaman dengan HTML, CSS, JavaScript, dan berbagai framework.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills Saya</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML/CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                    <span>90%</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-php"></i>
+                    <h3>PHP</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                    <span>85%</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-laravel"></i>
+                    <h3>Laravel</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+                    <span>70%</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git/GitHub</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                    <span>80%</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-bootstrap"></i>
+                    <h3>Bootstrap</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                    <span>85%</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-figma"></i>
+                    <h3>Figma</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                    <span>75%</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -43,21 +105,27 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <img src="game.jpeg" alt="Proyek 1" loading="lazy">
-                    <h3>Proyek 1 - Game Basket Sederhana</h3>
-                    <p>Aplikasi game basket sederhana yang interaktif.</p>
-                    <center><a href="" download="" class="project-btn" target="_blank">Lihat Projek</a></center>
+                    <div class="project-card-content">
+                        <h3>Proyek 1 - Game Basket Sederhana</h3>
+                        <p>Aplikasi game basket sederhana yang interaktif.</p>
+                        <a href="https://github.com/muhamad-syauqi/game-basket" class="project-btn" target="_blank">Lihat Proyek</a>
+                    </div>
                 </div>
                 <div class="project-card">
                     <img src="kas.jpeg" alt="Proyek 2" loading="lazy">
-                    <h3>Proyek 2 - Projek kas kelas</h3>
-                    <p>Desain sebuah website kas kelas sederhana menggunakan figma.</p>
-                    <center><a href="" download="" class="project-btn" target="_blank">Lihat Projek</a></center>
+                    <div class="project-card-content">
+                        <h3>Proyek 2 - Projek kas kelas</h3>
+                        <p>Desain sebuah website kas kelas sederhana menggunakan figma.</p>
+                        <a href="https://github.com/muhamad-syauqi/kas-kelas" class="project-btn" target="_blank">Lihat Proyek</a>
+                    </div>
                 </div>
                 <div class="project-card">
                     <img src="usecase.jpeg" alt="Proyek 3" loading="lazy">
-                    <h3>Proyek 3 - Usecase kas kelas</h3>
-                    <p>Sebuah use case dari projek kas kelas.</p>
-                    <center><a href="" download="" class="project-btn" target="_blank">Lihat Projek</a></center>
+                    <div class="project-card-content">
+                        <h3>Proyek 3 - Usecase kas kelas</h3>
+                        <p>Sebuah use case dari projek kas kelas.</p>
+                        <a href="https://github.com/muhamad-syauqi/usecase-kas" class="project-btn" target="_blank">Lihat Proyek</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,10 +142,6 @@
                 <div class="cert-card">
                     <img src="netskill.jpeg " alt="Sertifikat 2" loading="lazy">
                     <h3>Freelance website - Netskills</h3>
-                </div>
-                <div class="cert-card">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Sertifikat 3" loading="lazy">
-                    <h3>React.js - Udemy</h3>
                 </div>
             </div>
         </div>
